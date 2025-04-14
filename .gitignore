@@ -1,36 +1,34 @@
-# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
-
-# dependencies
+# 📦 Node modules
 node_modules/
 
-# Expo
+# 🧪 קבצי טסט/באגים
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ⚙️ Android build
+android/.gradle/
+android/app/build/
+android/build/
+
+# 🍏 iOS (אם בעתיד תעבור ל־bare)
+ios/build/
+ios/Pods/
+*.xcworkspace
+*.xcodeproj
+xcuserdata/
+
+# 🧬 Expo folders
 .expo/
-dist/
-web-build/
-expo-env.d.ts
+.expo-shared/
 
-# Native
-*.orig.*
-*.jks
-*.p8
-*.p12
-*.key
-*.mobileprovision
+# 📁 תצורות סביבתיות
+.env
+.env.*
 
-# Metro
-.metro-health-check*
-
-# debug
-npm-debug.*
-yarn-debug.*
-yarn-error.*
-
-# macOS
+# 🧙‍♂️ macOS/VSCode/system files
 .DS_Store
-*.pem
-
-# local env files
-.env*.local
-
-# typescript
-*.tsbuildinfo
+.vscode/
+.idea/
+*.swp
